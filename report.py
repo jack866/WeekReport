@@ -72,7 +72,7 @@ bugs = new1+new2+new3+new4+new5  # 一周共计产生bug
 fixes = fix1+fix2+fix3+fix4+fix5  # 一周共计处理bug
 rate = round(fixes/bugs*100)
 
-content = '本周还是继续上周的一个测试思路，继续测试' + title + '的相关内容。上周具体测试内容如下:' + \
+content = '本周还是继续上周的一个测试思路，继续测试' + title + '的相关内容。本周具体测试内容如下:' + \
           '\n' + '\n' + day1 + '\n' + day2 + '\n' + day3 + '\n' + day4 + '\n' + day5 + '\n' + \
           '过程中遇到的问题:' + event + '\n'+ '\n' + '共计产生缺陷' + str(bugs) + '个,' + '共计处理' + str(fixes)+'个,' + \
           '剩余待处理缺陷' + str(bugs-fixes) + '个,' + '处理率：' + str(rate) + '%。'

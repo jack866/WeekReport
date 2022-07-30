@@ -80,6 +80,7 @@ content = '本周还是继续上周的一个测试思路，继续测试' + title + '的相关内容。本周
 
 f = open('C:/Users/Administrator/Desktop/周报.txt', 'w')
 f.write(title + '\n' + '\n' + '\n' + content + '\n' + '\n' + '\n'+nextPlan)
+f.close()
 
 
 

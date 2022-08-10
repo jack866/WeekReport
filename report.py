@@ -5,31 +5,35 @@ title = '流量池v7'
 lastWeek = 3
 new1 = 7
 bug1 = new1 + lastWeek
-fix1 = 6
+fix1 = 4
 rate1 = round(fix1/bug1*100)
 # rate1 = 0
-event1 = '处理上周遗留的bug然后主要测试首次客源拨打隐私号，需注意管家端与流量池端不同的测试点以及APP端也需要注意。'
+event1 = '处理上周遗留的bug然后主要测试首次客源拨打隐私号，需注意管家端与流量池端不同的测试点以及APP端也需要注意，隐私号需求已完成。'
 day1 = '周一新增缺陷:'+str(new1) + '个，' + \
+       '上周遗留缺陷:'+str(lastWeek)+'个，' + \
        '累计缺陷:' + str(bug1) + '个。' + \
        '已处理缺陷:'+str(fix1)+'个。剩余待处理缺陷:'\
        + str(bug1-fix1) + '个。' + '处理率:' + str(rate1) + '%。' + '\n' \
        + event1 + '\n'
 
-new2 = 0
+new2 = 9
 bug2 = bug1-fix1+new2
-fix2 = 0
-# rate2 = round(fix2/bug2*100)
-rate2=0
-event2 = '参加需求评审优化用例。JRZFB-6832-9999角色优化优化已提测，现根据需求字段写sql'
+fix2 = 10
+rate2 = round(fix2/bug2*100)
+# rate2=0
+event2 = '1.追踪处理一些昨天遗留的bug'+'\n' + \
+         '2.测试设备渠道、排班新增'+'\n' + \
+         '3.写sql测试经纪人总客源、带看转换率、回复时间。'+'\n' + \
+         'app-9999角色优化、设备管理需求已完成。'
 day2 = '周二新增缺陷:'+str(new2) + '个，' + \
        '累计缺陷:' + str(bug2) + '个。' + \
        '已处理缺陷:'+str(fix2)+'个。剩余待处理缺陷:'\
        + str(bug2-fix2) + '个。' + '处理率:' + str(rate2) + '%。' + '\n' \
        + event2 + '\n'
 
-new3 = 4
+new3 = 0
 bug3 = bug2-fix2+new3
-fix3 = 1
+fix3 = 0
 rate3 = round(fix3/bug3*100)
 event3 = '缺陷问题集中为除直播总时长sql写的有问题以外，其余全部为安排app问题。主要为数据报' \
          '表主播头像不显示、主播数据报表详情数据没有排序、数据报表详情没有展示主播"角色类型"'
@@ -51,9 +55,9 @@ day4 = '周四新增缺陷:'+str(new4) + '个，' + \
        + str(bug4-fix4) + '个。' + '处理率:' + str(rate4) + '%。' + '\n' \
        + event4 + '\n'
 
-new5 = 1
+new5 = 0
 bug5 = bug3-fix3+new5
-fix5 = 1
+fix5 = 0
 rate5 = round(fix5/bug5*100)
 event5 = '流量池主播报表sql已经写好。目前客源隐私号已经可以提测（仅限web,app还没开始）,' \
          '除此以外排班管理、渠道配置也可以测了。其中，设备管理开始产品说可以测了，发现问题后' \

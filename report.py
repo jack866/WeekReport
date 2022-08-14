@@ -45,9 +45,9 @@ day3 = '周三新增缺陷:'+str(new3) + '个，' + \
        + str(bug3-fix3) + '个。' + '处理率:' + str(rate3) + '%。' + '\n' \
        + event3 + '\n'
 
-new4 = 0
+new4 = 1
 bug4 = bug3-fix3+new4
-fix4 = 1
+fix4 = 2
 rate4 = round(fix4/bug4*100)
 event4 = 'appBug还没有改好，主要是在写数据报表优化的sql，预计明天才可以提测'
 day4 = '周四新增缺陷:'+str(new4) + '个，' + \
@@ -74,7 +74,7 @@ day5 = '周五新增缺陷:'+str(new5) + '个，' + \
 event = '暂无'
 
 
-nextPlan = '流量池v7测试'
+nextPlan = '1.管家组织架构变动所有涉及功能梳理2.流量池需求待定'
 
 bugs = new1+new2+new3+new4+new5  # 一周共计产生bug
 fixes = fix1+fix2+fix3+fix4+fix5  # 一周共计处理bug
